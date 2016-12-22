@@ -15,10 +15,10 @@ The following tables exist:
 * Students {student_id, name}
 * ProgramRegistrations {student_id, program, department}
 * Departments {department, full_name, field}
-* Class {class_id, department, course_number, full_name, short_name, term, year, professor, is_project, units}
+* Classes {class_id, department, course_number, full_name, short_name, term, year, professor, is_project, units}
 * Registrations {student_id, class_id}
-* ActivityLog {Student_id, class_id, start_time, end_time, activity, notes}
-* CourseSurvey {student_id, class_id, final_grade, difficulty, enjoyment, interest}
+* Activites {Student_id, class_id, date, start_time, end_time, activity, notes}
+* CourseSurveys {student_id, class_id, final_grade, difficulty, enjoyment, interest}
 
 ## Definitions
 Some definitions:
@@ -43,6 +43,8 @@ Some definitions:
   * Spring
   * Summer
 * A *date* starts at either sunrise or when the student woke up, wichever is earlier. The date ends when the following date begins. If an activity spans date boundries, then it belongs with the date in which it was started.
+  * *date* is a real value that represents days since Gregorian epoch. See sqlite3 docs on datetime.
+  * *start_time* and *end_time* are integers as Unix Time, the number of seconds since Unix epoch. See sqlite3 docs on datetime.
 
 ## Representing unusual cases
 To represent an MQP or other multi-credit class that spans multiple terms, use a seperate entry into Classes and Registrations. 
