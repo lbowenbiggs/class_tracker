@@ -15,7 +15,7 @@ The following tables exist:
 * Students {student_id, name}
 * ProgramRegistrations {student_id, program, department}
 * Departments {department, full_name, field}
-* Class {class_id, department, course_number, term, year, professor, is_project, units}
+* Class {class_id, department, course_number, full_name, short_name, term, year, professor, is_project, units}
 * Registrations {student_id, class_id}
 * ActivityLog {Student_id, class_id, start_time, end_time, activity, notes}
 * CourseSurvey {student_id, class_id, final_grade, difficulty, enjoyment, interest}
