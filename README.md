@@ -12,13 +12,13 @@ Version 1.0
 ## Tables
 The following tables exist:
 
-* Students {studentID, name}
-* Programs {studentID, program, department}
-* Departments {department, fullName, field}
-* Classes {classID, department, courseNumber, term, year, professor, isProject, units}
-* Registrations {studentID, classID}
-* ActivityLog {StudentID, classID, startTime, endTime, activity, notes}
-* CourseSurvey {studentID, classID, finalGrade, difficulty, enjoyment, interest}
+* Students {student_id, name}
+* ProgramRegistrations {student_id, program, department}
+* Departments {department, full_name, field}
+* Class {class_id, department, course_number, term, year, professor, is_project, units}
+* Registrations {student_id, class_id}
+* ActivityLog {Student_id, class_id, start_time, end_time, activity, notes}
+* CourseSurvey {student_id, class_id, final_grade, difficulty, enjoyment, interest}
 
 ## Definitions
 Some definitions:
