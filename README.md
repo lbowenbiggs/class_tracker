@@ -29,7 +29,7 @@ Some definitions:
   * "Science" including Mathematics
   * "Humanities and Arts"
   * "Social Science"
-* *isProject* is true if the course is an ISP, IQP, or MQP.
+* *isProject* is 1 if the course is an ISP, IQP, or MQP, and 0 otherwise.
 * *units* is the number of units at WPI the class is worth. This is a real number, as most classes are worth 1/3 of a Unit
 * In the course survey, *difficulty*, *enjoyment*, and *interest* are all integer values between 0 and 10, where 10 indicates the maximum positive, eg "maximum difficulty" or "maximum enjoyment". These values are relative only to the student's personal beliefs. 
 * A *term* is the name of the term it was taken. It accepts the following values:
