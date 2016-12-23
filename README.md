@@ -44,6 +44,7 @@ Some definitions:
   * Summer
 * *final_grade* is the letter grade recieved for the class. This can be one of the following: "A", "B", "C", "NR", "F", "D", "I", or "SP"
 * *start_time* and *end_time* are represented using sqlite3 datetime. 
+* An *activity* is one of the following: "reading", "lecture", "exam", "homework", "lab", or  "final project". reading, homework, and final project are considered to be outside of class.
 
 ## Representing unusual cases
 To represent an MQP or other multi-credit class that spans multiple terms, use a seperate entry into Classes and Registrations. 
